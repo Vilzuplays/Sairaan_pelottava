@@ -3,11 +3,57 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Pause System</extension>
+    <extension index="1">extensions\Save and Load easy use Scripts</extension>
+  </NewExtensions>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Pause ja save">
+      <sprite>sprites\sprite1</sprite>
+      <sprite>sprites\sprite0</sprite>
+      <sprite>sprites\sPause_mobile</sprite>
+    </sprites>
+    <sprites name="Debug">
+      <sprite>sprites\spr_debugball</sprite>
+    </sprites>
+    <sprites name="Intro">
+      <sprite>sprites\spr_lentokone</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\Instructions.gml</script>
+    <script>scripts\save_score.gml</script>
+    <script>scripts\load_score.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
+  <objects name="objects">
+    <objects name="Pauset ja save load">
+      <object>objects\oPause</object>
+      <object>objects\oPause_Mobile</object>
+      <object>objects\obj_draw_score_text</object>
+      <object>objects\obj_Addscore</object>
+      <object>objects\obj_GameOver</object>
+    </objects>
+    <objects name="Intro">
+      <object>objects\obj_intro_check</object>
+    </objects>
+    <objects name="Debug">
+      <object>objects\obj_debugball</object>
+      <object>objects\obj_debug_text</object>
+      <object>objects\obj_room_start_DB</object>
+    </objects>
+    <object>objects\obj_introtext_DB</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room_intro_read</room>
+    <room>rooms\room_intro</room>
+    <room>rooms\room1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
